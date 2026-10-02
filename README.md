@@ -1,5 +1,7 @@
 # Animal Avatar Generator
 
+[![CI](https://github.com/TrepnickKev/Animal-Avatar-Generator/actions/workflows/ci.yml/badge.svg)](https://github.com/TrepnickKev/Animal-Avatar-Generator/actions/workflows/ci.yml)
+
 `animal_avatar` is a Flutter package that turns any string into a friendly,
 illustrated animal avatar. The avatar is **deterministic**: the same seed always
 produces the same picture, on every device and after every reinstall, with no
@@ -95,6 +97,9 @@ cd example
 flutter build windows --release
 .\build\windows\x64\runner\Release\example.exe
 ```
+
+Every push to `main` also builds this preview on GitHub Actions; the portable
+folder is attached to the run as the `animal_avatar_preview` artifact.
 
 ## Tests
 
