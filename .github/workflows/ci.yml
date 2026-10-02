@@ -1,0 +1,66 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    name: Analyze and test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          flutter-version: 3.41.x
+          cache: true
+
+      - name: Package dependencies
+        run: flutter pub get
+
+      - name: Analyze package
+        run: flutter analyze --fatal-infos
+
+      - name: Test package
+        run: flutter test
+
+      - name: Analyze example
+        working-directory: example
+        run: |
+          flutter pub get
+          flutter analyze --fatal-infos
+
+  build-example:
+    name: Build Windows preview
+    needs: test
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          flutter-version: 3.41.x
+          cache: true
+
+      - name: Build example
+        working-directory: example
+        run: flutter build windows --release
+
+      - name: Upload preview build
+        uses: actions/upload-artifact@v4
+        with:
+          name: animal_avatar_preview
+          path: example/build/windows/x64/runner/Release
+          retention-days: 14
