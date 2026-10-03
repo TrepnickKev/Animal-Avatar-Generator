@@ -36,7 +36,7 @@ class AvatarLayers {
     'assets/animal/animal_bull_brown_fur.png',
     'assets/animal/animal_cat.png',
     'assets/animal/animal_cat_shorthair.png',
-    'assets/animal/animal_cat_shorthair_sand.png',
+    'assets/animal/animal_cat_vampire.png',
     'assets/animal/animal_dog.png',
     'assets/animal/animal_dog_labrador.png',
     'assets/animal/animal_duck.png',
