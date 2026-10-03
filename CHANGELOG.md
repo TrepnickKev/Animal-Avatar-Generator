@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.2.1
+
+- Replaced the sand shorthair cat with a vampire cat.
+
 ## 0.2.0
 
 - Renamed the package to `animal_avatar`; the widget is now `AnimalAvatar` and
