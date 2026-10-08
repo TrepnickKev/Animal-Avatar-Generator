@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.2.2
+
+- Added eight animals (bear, deer, crow, falcon, beaver, weasel, hedgehog, eagle) and six badges (Bitcoin logo, glowing logo, gold and navy coins, lightning shield, "21" coin); removed the forehead flashes and the lightning medal.
+
 ## 0.2.1
 
 - Replaced the sand shorthair cat with a vampire cat.
