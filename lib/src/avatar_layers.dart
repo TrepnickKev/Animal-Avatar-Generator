@@ -32,15 +32,22 @@ class AvatarLayers {
 
   static const List<String> animals = <String>[
     'assets/animal/animal_badger.png',
+    'assets/animal/animal_beaver.png',
+    'assets/animal/animal_bear.png',
     'assets/animal/animal_bird.png',
     'assets/animal/animal_bull_brown_fur.png',
     'assets/animal/animal_cat.png',
     'assets/animal/animal_cat_shorthair.png',
     'assets/animal/animal_cat_vampire.png',
+    'assets/animal/animal_crow.png',
+    'assets/animal/animal_deer.png',
     'assets/animal/animal_dog.png',
     'assets/animal/animal_dog_labrador.png',
     'assets/animal/animal_duck.png',
+    'assets/animal/animal_eagle.png',
+    'assets/animal/animal_falcon.png',
     'assets/animal/animal_fox.png',
+    'assets/animal/animal_hedgehog.png',
     'assets/animal/animal_otter.png',
     'assets/animal/animal_owl.png',
     'assets/animal/animal_owl_dark.png',
@@ -52,6 +59,7 @@ class AvatarLayers {
     'assets/animal/animal_sheep.png',
     'assets/animal/animal_squirrel.png',
     'assets/animal/animal_squirrel_european_red.png',
+    'assets/animal/animal_weasel.png',
     'assets/animal/animal_wolf_gray.png',
     'assets/animal/animal_wolf_white.png',
     'assets/animal/animal_woodpecker.png',
@@ -101,13 +109,16 @@ class AvatarLayers {
   /// One is picked per seed like any other slot, but visibility is controlled
   /// by [AnimalAvatar.showBadge] rather than randomness.
   static const List<String> badges = <String>[
+    'assets/badge/badge_21_glow.png',
     'assets/badge/badge_bitcoin_glow.png',
     'assets/badge/badge_bitcoin_gold.png',
+    'assets/badge/badge_bitcoin_logo.png',
+    'assets/badge/badge_bitcoin_logo_glow.png',
     'assets/badge/badge_coin.png',
-    'assets/badge/badge_flash.png',
+    'assets/badge/badge_coin_gold.png',
+    'assets/badge/badge_coin_navy.png',
     'assets/badge/badge_flash_glow.png',
-    'assets/badge/badge_flash_glow_forehead.png',
-    'assets/badge/badge_lightning.png',
+    'assets/badge/badge_shield_lightning.png',
   ];
 
   /// True once at least one animal is bundled; gates real compositing vs the
