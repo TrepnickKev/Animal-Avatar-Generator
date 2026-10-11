@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.2.4
+
+- Removed the falcon from the bundled animal set.
+
 ## 0.2.3
 
 - Added the gold lightning bolt badge; removed the flat Bitcoin logo badge.
