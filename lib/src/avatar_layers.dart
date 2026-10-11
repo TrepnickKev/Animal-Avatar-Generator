@@ -112,12 +112,12 @@ class AvatarLayers {
     'assets/badge/badge_21_glow.png',
     'assets/badge/badge_bitcoin_glow.png',
     'assets/badge/badge_bitcoin_gold.png',
-    'assets/badge/badge_bitcoin_logo.png',
     'assets/badge/badge_bitcoin_logo_glow.png',
     'assets/badge/badge_coin.png',
     'assets/badge/badge_coin_gold.png',
     'assets/badge/badge_coin_navy.png',
     'assets/badge/badge_flash_glow.png',
+    'assets/badge/badge_flash_gold.png',
     'assets/badge/badge_shield_lightning.png',
   ];
 
