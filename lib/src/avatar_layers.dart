@@ -45,7 +45,6 @@ class AvatarLayers {
     'assets/animal/animal_dog_labrador.png',
     'assets/animal/animal_duck.png',
     'assets/animal/animal_eagle.png',
-    'assets/animal/animal_falcon.png',
     'assets/animal/animal_fox.png',
     'assets/animal/animal_hedgehog.png',
     'assets/animal/animal_otter.png',
