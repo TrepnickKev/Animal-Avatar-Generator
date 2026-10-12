@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.2.5
+
+- Added the capybara and a new fox; re-added the falcon; removed the dimpled fox.
+- Renamed the bull asset to `animal_bull`; nudged the duck and bear up.
+
 ## 0.2.4
 
 - Removed the falcon from the bundled animal set.
