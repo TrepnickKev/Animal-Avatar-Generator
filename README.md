@@ -14,11 +14,10 @@ Each avatar is composited from hand-tuned art layers:
 | Layer | What it is | Options |
 |---|---|---|
 | Background | A scenic circle: forests, lakes, mountains, coast, by day and night and across the seasons | 15 |
-| Animal | The character: fox, owl, otter, badger, cats, dogs, penguins, squirrels, rabbit, duck, sheep, woodpecker, wolves, bull, raccoon, red panda, bird | 24 |
-| Detail | Clothing on the chest: scarves, puffer vests, fur-collared jackets, zip coats and hoodies in several colours, or nothing | 31 |
-| Badge | An optional Bitcoin themed overlay: gold ₿, glowing ₿, coin, lightning medal, flash on the forehead or chest | 7 |
+| Animal | The character: fox, owl, otter, badger, bear, deer, crow, eagle, falcon, beaver, weasel, hedgehog, capybara, cats, dogs, penguins, squirrels, rabbit, duck, sheep, woodpecker, wolves, bull, raccoon, red panda, bird | 33 |
+| Badge | An optional Bitcoin themed overlay: gold ₿, glowing ₿, glowing logo, three coins including a "21" coin, lightning shield, gold and glowing bolts | 10 |
 
-That is 11,160 distinct animals in their surroundings, and 78,120 looks with a
+That is 15,345 distinct animals in their surroundings, and 153,450 looks with a
 badge. The badge layer is optional and can be switched off per widget, so the
 avatars also work in contexts that have nothing to do with Bitcoin.
 
@@ -79,7 +78,9 @@ The art contract (canvas, placement of faces and collars, how scarves and jacket
 line up with the animals) is described in `ASSET_SPEC.md`.
 
 One thing to keep in mind: the pick for a slot is `draw % list.length`, so
-changing the length of a list changes which entry existing seeds land on. That is
+changing the length of a list changes which entry existing seeds land on. The
+order of a list matters for the same reason, which is why the animal list is
+deliberately not alphabetical: append new entries at the end. That is
 fine while you are still building your set; once avatars are in the hands of
 users, only append to the lists or accept that some avatars will change.
 

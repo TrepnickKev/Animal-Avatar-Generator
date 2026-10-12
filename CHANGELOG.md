@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.2.6
+
+- Reshuffled the animal manifest order so existing seeds map to different animals; the order is now append-only.
+- README content table and combination counts brought up to date.
+
 ## 0.2.5
 
 - Added the capybara and a new fox; re-added the falcon; removed the dimpled fox.
